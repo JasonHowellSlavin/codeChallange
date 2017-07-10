@@ -1,7 +1,63 @@
-h1 {
-    color: blue;
+@mixin flex-box($align: center, $direction: column, $wrap: nowrap, $justify: center) {
+    align-items: $align;
+    display: flex;
+    flex-direction: $direction;
+    flex-wrap: $wrap;
+    justify-content: $justify;
+
 }
 
-h2 {
-    color: green;
+$default-padding: 1rem;
+
+
+* {
+    font-size: 16px;
+    font-family: Helvetica, Verdana, SansSerif, Times;
+    margin: 0;
+    padding: 0;
+}
+
+article {
+    @include flex-box;
+    background: #1199DD;
+    height: 100%;
+    width: 100%;
+
+    section {
+        @include flex-box(center, column, nowrap, flex-start);
+        background: #AEAEAE;
+        box-shadow: #565656 0.2rem 0.2rem 10rem 0.2rem;
+        display: flex;
+        height: 25rem;
+        width: 25rem;
+    }
+
+    h1 {
+        background: #FFF;
+        border-bottom: 4px dashed #1199DD;
+        box-sizing: border-box;
+        padding: $default-padding;
+        text-align: center;
+        width: 100%;
+    }
+
+    .input-container {
+        @include flex-box;
+        background: #FFF;
+        box-sizing: border-box;
+        color: #11DD99;
+        padding: $default-padding;
+        width: 100%;
+
+        label {
+            font-weight: 700;
+            padding: $default-padding;
+        }
+
+        input {
+            border: 2px solid #AEAEAE;
+            height: 2rem;
+            width: 100%;
+        }
+    }
 }

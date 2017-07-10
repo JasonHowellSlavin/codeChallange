@@ -1,5 +1,84 @@
-h1 {
-  color: blue; }
+* {
+  font-size: 16px;
+  font-family: Helvetica, Verdana, SansSerif, Times;
+  margin: 0;
+  padding: 0; }
 
-h2 {
-  color: green; }
+article {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #1199DD;
+  height: 100%;
+  width: 100%; }
+  article section {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    background: #AEAEAE;
+    -webkit-box-shadow: #565656 0.2rem 0.2rem 10rem 0.2rem;
+            box-shadow: #565656 0.2rem 0.2rem 10rem 0.2rem;
+    display: flex;
+    height: 25rem;
+    width: 25rem; }
+  article h1 {
+    background: #FFF;
+    border-bottom: 4px dashed #1199DD;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 1rem;
+    text-align: center;
+    width: 100%; }
+  article .input-container {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background: #FFF;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    color: #11DD99;
+    padding: 1rem;
+    width: 100%; }
+    article .input-container label {
+      font-weight: 700;
+      padding: 1rem; }
+    article .input-container input {
+      border: 2px solid #AEAEAE;
+      height: 2rem;
+      width: 100%; }
